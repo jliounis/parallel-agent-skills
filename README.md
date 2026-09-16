@@ -65,7 +65,7 @@ Skills follow the [Agent Skills](https://agentskills.io/specification) specifica
 
 | Skill                        | Description                                               |
 | ---------------------------- | --------------------------------------------------------- |
-| **parallel-search-mcp** | Web search and page fetching through Parallel Search MCP; includes Bifrost setup |
+| **parallel-bifrost-setup** | Install authenticated Parallel Search MCP in Bifrost and configure gateway controls |
 | **parallel-web-search**      | Web search (default for most research queries)            |
 | **parallel-web-extract**     | Extract content from URLs, articles, PDFs                 |
 | **choose-your-parallel-api** | Choose the right Parallel API and configuration           |
