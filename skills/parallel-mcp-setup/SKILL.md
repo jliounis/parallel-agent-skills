@@ -43,7 +43,7 @@ Respect the deployment's reload procedure. Existing connection URL/auth-type cha
 
 ## 3. Configure gateway controls and access
 
-When the user needs a particular search mode, source policy, or response budget, read [gateway search controls](./references/gateway-controls.md). Apply these as upstream connection settings. Keep the chosen credential and search policy under gateway administration; do not enable caller-supplied overrides of these headers unless explicitly intended.
+Keep Parallel’s defaults by omitting search-setting headers and URL parameters. When the user explicitly requests a particular search mode, source policy, or response budget, read [gateway search controls](./references/gateway-controls.md). Apply these as upstream connection settings. Keep the chosen credential and search policy under gateway administration; do not enable caller-supplied overrides of these headers unless explicitly intended.
 
 Confirm Bifrost discovers both tools and grants the intended downstream client or virtual key access to them. Connect the agent to the deployment's Bifrost MCP gateway with its configured downstream authentication. Use the actual discovered tool names, which may be prefixed. Installing this skill does not itself register or expose the MCP tools.
 
