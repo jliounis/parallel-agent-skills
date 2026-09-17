@@ -1,11 +1,11 @@
 ---
-name: parallel-bifrost-setup
+name: parallel-mcp-setup
 description: Use when installing, configuring, or troubleshooting an authenticated Parallel Search MCP connection in Bifrost, including gateway-level search settings and downstream tool access.
 ---
 
-# Set up Parallel Search MCP in Bifrost
+# Set up Parallel MCP
 
-Configure and verify an authenticated Parallel Search MCP connection through Bifrost. Tool descriptions supplied by the MCP server govern search and fetch usage; this skill covers installation and gateway configuration.
+Configure and verify authenticated Parallel MCP connections. The first supported setup path is Parallel Search MCP through Bifrost; the steps below apply to that path. Tool descriptions supplied by the MCP server govern search and fetch usage; this skill covers installation and gateway configuration.
 
 ## 1. Inspect the deployment
 
@@ -59,7 +59,7 @@ On a 401/403, check the Parallel credential, account access, and upstream auth c
 
 ## Optional: distribute this setup skill through Bifrost
 
-In **Skills Repository → New Skill**, copy this file's name and description into Details, paste only the Markdown body into the SKILL.md editor, and attach `references/gateway-controls.md`. For an existing skill, create a new version. Publish an initial version such as `1.0.0`, then use **Register as Marketplace** and the dashboard's installation commands; the plugin name is `bifrost-parallel-bifrost-setup`.
+In **Skills Repository → New Skill**, copy this file's name and description into Details, paste only the Markdown body into the SKILL.md editor, and attach `references/gateway-controls.md`. For an existing skill, create a new version. Publish an initial version such as `1.0.0`, then use **Register as Marketplace** and the dashboard's installation commands; the plugin name is `bifrost-parallel-mcp-setup`.
 
 Bifrost serves newly created skills immediately and documents marketplace/download routes as public. Keep deployment credentials and private configuration out of published files. Skill publication is separate from MCP connection setup.
 
